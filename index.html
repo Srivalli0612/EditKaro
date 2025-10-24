@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editkaro.in | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Editkaro<span>.in</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div> <!-- For mobile menu -->
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Transforming <span>Ideas</span> into Visual Stories</h1>
+    <p>At <strong>Editkaro.in</strong>, we craft videos that engage, inspire, and grow your brand.</p>
+    <a href="#portfolio" class="btn">View Our Work</a>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+  <h2>Our <span>Portfolio</span></h2>
+  <p>Explore our diverse work — from short reels to cinematic edits.</p>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="short">Short-form</button>
+    <button class="filter-btn" data-category="long">Long-form</button>
+    <button class="filter-btn" data-category="gaming">Gaming</button>
+    <button class="filter-btn" data-category="football">Football</button>
+    <button class="filter-btn" data-category="color">Color Grading</button>
+    <button class="filter-btn" data-category="anime">Anime</button>
+    <button class="filter-btn" data-category="ads">E-commerce Ads</button>
+  </div>
+
+  <!-- Video Grid -->
+  <div class="video-gallery">
+    <div class="video-card" data-category="short">
+      <video src="videos/short form video.mp4" muted loop></video>
+      <div class="overlay"><h3>Short Form Edit</h3></div>
+    </div>
+
+    <div class="video-gallery">
+    <div class="video-card" data-category="long">
+      <video src="videos/long form video.mp4" muted loop></video>
+      <div class="overlay"><h3>Long Form Edit</h3></div>
+    </div>
+
+    <div class="video-card" data-category="gaming">
+      <video src="videos/gaming.mp4" muted loop></video>
+      <div class="overlay"><h3>Gaming Montage</h3></div>
+    </div>
+
+    <div class="video-card" data-category="color">
+      <video src="videos/color.mp4" muted loop></video>
+      <div class="overlay"><h3>Color Grading Demo</h3></div>
+    </div>
+
+    <div class="video-card" data-category="football">
+      <video src="videos/football.mp4" muted loop></video>
+      <div class="overlay"><h3>Football Edit</h3></div>
+    </div>
+
+    <div class="video-card" data-category="anime">
+      <video src="videos/animation.mp4" muted loop></video>
+      <div class="overlay"><h3>Anime Video Edit</h3></div>
+    </div>
+
+    <div class="video-card" data-category="ads">
+      <video src="videos/E-commerce ad.mp4" muted loop></video>
+      <div class="overlay"><h3>E-commerce Ad</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About <span>Editkaro.in</span></h2>
+      <p>
+        At <strong>Editkaro.in</strong>, we bring stories to life through creative video editing and social media marketing.  
+        From short reels to cinematic documentaries, we craft content that captivates your audience and elevates your brand presence.  
+        Our team specializes in color grading, anime edits, e-commerce ads, gaming videos, football edits, and more.
+      </p>
+      <p>
+        Our mission is simple: <strong>to make every video memorable and every brand unforgettable</strong>.  
+        With a focus on creativity, precision, and engagement, we help you connect with your audience like never before.
+      </p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact <span>Editkaro.in</span></h2>
+  <p>Have a project in mind? Let's collaborate and make it amazing!</p>
+
+  <div class="contact-container">
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <!-- Social Links -->
+    <div class="contact-social">
+      <h3>Follow us:</h3>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 <strong>Editkaro.in</strong>. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+    <!-- Video Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="close-btn">&times;</span>
+    <video id="lightboxVideo" controls autoplay></video>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
